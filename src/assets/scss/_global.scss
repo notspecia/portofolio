@@ -1,0 +1,39 @@
+// rules globals on the project fotn seize whit media query
+html {
+    box-sizing: border-box;
+    font-size: 16px; // base font-size adjusted whit rem em
+
+    @media screen and (max-width: $breakpoint-lg) {
+        font-size: 15px;
+    }
+
+    @media screen and (max-width:$breakpoint-sm) {
+        font-size: 14px;
+    }
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+    color: #fff;
+    background-color: black; // repalce the canvas animate until will appear
+    font-family: $font-family-base;
+    font-weight: $font-weight-regular;
+    line-height: 1.5;
+}
+
+// ----------------------
+
+// add style on canva bg of the body
+.finisher-header {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+}
