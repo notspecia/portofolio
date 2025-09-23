@@ -30,6 +30,6 @@
     background-color: rgba(17, 17, 17, 0.8);
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(10px);
-    border-bottom: 1px solid gainsboro;
+    border-bottom: 1px solid rgba(220, 220, 220, 0.288);
 }
 </style>

@@ -22,7 +22,7 @@ import gitLogo from '../assets/images/stack-tools/git.svg'
 import postmanLogo from '../assets/images/stack-tools/postman.svg'
 import figmaLogo from '../assets/images/stack-tools/figma.svg'
 import windowsLogo from '../assets/images/stack-tools/windows.svg'
-
+import powershellLogo from '../assets/images/stack-tools/powershell.svg'
 
 // static array name + svg image imported
 export const stack = [
@@ -51,4 +51,5 @@ export const tools = [
     { name: 'Postman', logo: postmanLogo },
     { name: 'Figma', logo: figmaLogo },
     { name: 'Windows', logo: windowsLogo },
+    { name: 'Powershell', logo: powershellLogo }
 ];

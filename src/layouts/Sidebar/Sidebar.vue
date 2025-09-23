@@ -40,6 +40,10 @@ const githubStore = useGithubStore();
                 <i class="bi bi-tiktok"></i>
                 <a href="https://www.tiktok.com/@specia_">Tik tok</a>
             </li>
+            <li>
+                <i class="bi bi-youtube"></i>
+                <a href="https://www.youtube.com/@notspecia">YouTube</a>
+            </li>
         </ul>
 
         <!-- latest commits on my github account -->

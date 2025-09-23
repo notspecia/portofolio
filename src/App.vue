@@ -13,7 +13,7 @@ const githubStore = useGithubStore();
 onMounted(async () => {
   await githubStore.initGithubData();
   new FinisherHeader({
-    "count": 2,
+    "count": 3,
     "size": {
       "min": 1400,
       "max": 1600,
