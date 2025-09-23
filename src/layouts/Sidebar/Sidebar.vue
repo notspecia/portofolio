@@ -57,7 +57,7 @@ const githubStore = useGithubStore();
     width: 160px;
     height: 160px;
     object-fit: cover;
-    border: 2px solid #4863ff;
+    border: 2px solid rgba(255, 255, 255, 0.15);
     border-radius: 50%;
 }
 

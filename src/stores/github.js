@@ -27,7 +27,7 @@ export const useGithubStore = defineStore("github", () => {
 
 
     /* ACTIONS */
-    // fetching of arrays of repos[] 
+    // fetching of arrays of repos[]
     const fetchRepositories = async () => {
         try {
             stateRepository.isLoading = true;
@@ -42,7 +42,7 @@ export const useGithubStore = defineStore("github", () => {
         }
     }
 
-    // fetching every repos[] in my account github, then take all the commits and filter them in cronologic order
+    // fetching every repos[] in my account github, then take all the commits and filter them in cronologic order to use in sidebar component
     const fetchAllCommits = async () => {
         try {
             stateCommits.isLoading = true;
@@ -77,6 +77,29 @@ export const useGithubStore = defineStore("github", () => {
         }
     };
 
+    // fetch of numbers of commits[] for repo
+    const fetchRepoCommits = async (repoName) => {
+        try {
+            const res = await fetch(
+                `https://api.github.com/repos/${username}/${repoName}/commits?per_page=1`,
+                { headers }
+            );
+
+            // guarda l'header Link
+            const link = res.headers.get("Link");
+            if (link) {
+                const match = link.match(/&page=(\d+)>; rel="last"/);
+                if (match) return parseInt(match[1]);
+            }
+
+            // se non c’è Link → repo con ≤1 commit
+            const data = await res.json();
+            return Array.isArray(data) ? data.length : 0;
+        } catch {
+            return 0;
+        }
+    }
+
 
     // invocate handle functions whit te GET data's of github on App.vue
     const initGithubData = async () => {
@@ -84,5 +107,5 @@ export const useGithubStore = defineStore("github", () => {
         await fetchAllCommits();
     }
 
-    return { stateRepository, stateCommits, initGithubData }
+    return { stateRepository, stateCommits, fetchRepoCommits, initGithubData }
 })
