@@ -21,7 +21,7 @@ const commitCount = ref(null);
 // description sliced if too much long
 const repoDescription = computed(() => {
     const description = props.repo.description || "";
-    return description.length > 65 ? `${description.slice(0, 65)}...` : description;
+    return description.length > 80 ? `${description.slice(0, 80)}...` : description;
 });
 
 /* ONMOUNTED */
@@ -34,11 +34,14 @@ onMounted(async () => {
 <template>
     <div class="card">
         <div class="card-body">
-            <h5 class="card-title">
-                {{ repo.name }} <br>
-                <span class="fs-6"> {{ repo.full_name }}</span>
-            </h5>
-            <p class="card-text fs-6">
+            <div class="d-flex align-items-start gap-3">
+                <img :src="repo.owner.avatar_url" alt="logo repo" class="repo-logo">
+                <h5 class="card-title">
+                    {{ repo.name }} <br>
+                    <span> {{ repo.full_name }}</span>
+                </h5>
+            </div>
+            <p class="card-text">
                 {{ repoDescription }}
             </p>
             <div class="repo-infos">
@@ -70,9 +73,23 @@ onMounted(async () => {
         box-shadow: 0 12px 28px rgba(0, 0, 0, 0.7);
     }
 
-    .card-title {}
+    .repo-logo {
+        width: 40px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 5px;
+    }
 
-    .card-text {}
+    .card-title {
+        font-size: 1.1rem;
+
+        span {
+            font-size: 0.9rem;
+        }
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
 
     .repo-infos {
         display: flex;
