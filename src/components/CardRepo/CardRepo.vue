@@ -24,15 +24,21 @@ const repoDescription = computed(() => {
     return description.length > 80 ? `${description.slice(0, 80)}...` : description;
 });
 
+/* FUNCTIONS */
+// function redirect to the github whit the repo clicked (open a new TAB)
+const goToRepo = () => {
+    window.open(props.repo.svn_url, '_blank')
+}
+
 /* ONMOUNTED */
 onMounted(async () => {
     commitCount.value = await githubStore.fetchRepoCommits(props.repo.name)
-})
+});
 </script>
 
 
 <template>
-    <div class="card">
+    <div class="card" @click="goToRepo">
         <div class="card-body">
             <div class="d-flex align-items-start gap-3">
                 <img :src="repo.owner.avatar_url" alt="logo repo" class="repo-logo">
