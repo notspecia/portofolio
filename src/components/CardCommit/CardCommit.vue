@@ -1,6 +1,8 @@
 <script setup>
 import { computed } from 'vue';
 import { useGithubStore } from '../../stores/github';
+import commitLogo from '../../assets/images/stack-tools/commit.svg'
+
 
 // props commits cycled into parent
 const props = defineProps({
@@ -21,12 +23,14 @@ const commitDescription = computed(() => {
     return description.length > 80 ? `${description.slice(0, 80)}...` : description;
 });
 
+
 /* FUNCTIONS */
 // function redirect to the github whit the commit clicked (open a new TAB)
 const goToCommit = () => {
     window.open(props.comm.html_url, '_blank')
 }
 
+// function to extract the repository name from the commit URL
 const extractRepoFromCommitUrl = () => {
     const match = props.comm.html_url.match(/github\.com\/([^\/]+\/[^\/]+)/);
     return match ? match[1] : '';
@@ -37,8 +41,9 @@ const extractRepoFromCommitUrl = () => {
 <template>
     <div class="card mb-4" @click="goToCommit">
         <div class="card-body">
-            <div class="d-flex align-items-start gap-3">
-                <h5 class="card-title">
+            <div class="d-flex align-items-center gap-2 mb-2">
+                <img :src="commitLogo" alt="commit logo" class="commit-logo">
+                <h5 class="card-title mb-0">
                     {{ extractRepoFromCommitUrl() }}
                 </h5>
             </div>
@@ -50,4 +55,20 @@ const extractRepoFromCommitUrl = () => {
 </template>
 
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.card {
+
+    .commit-logo {
+        width: 20px;
+        height: 20px;
+    }
+
+    .card-title {
+        font-size: 0.9rem;
+    }
+
+    .card-text {
+        font-size: 0.7rem;
+    }
+}
+</style>

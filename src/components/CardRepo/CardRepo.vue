@@ -67,12 +67,6 @@ onMounted(async () => {
 
 <style scoped lang="scss">
 .card {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-
-    &:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.7);
-    }
 
     .repo-logo {
         width: 40px;
