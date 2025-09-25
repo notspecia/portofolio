@@ -22,11 +22,11 @@ const githubStore = useGithubStore();
         <ul class="list-unstyled">
             <li>
                 <i class="bi bi-github"></i>
-                <a href="https://github.com/notspecia">notspecia</a>
+                <a href="https://github.com/notspecia" target="_blank">notspecia</a>
             </li>
             <li>
                 <i class="bi bi-envelope"></i>
-                <a href="mailto:gabspec@gmail.com">gabspec@gmail.com</a>
+                <a href="mailto:gabspec@gmail.com" target="_blank">gabspec@gmail.com</a>
             </li>
             <li>
                 <i class="bi bi-geo-alt"></i>
@@ -34,15 +34,15 @@ const githubStore = useGithubStore();
             </li>
             <li>
                 <i class="bi bi-linkedin"></i>
-                <a href="https://www.linkedin.com/in/speciale-gabriele-a6aa07312/">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/speciale-gabriele-a6aa07312/" target="_blank">LinkedIn</a>
             </li>
             <li>
                 <i class="bi bi-tiktok"></i>
-                <a href="https://www.tiktok.com/@specia_">Tik tok</a>
+                <a href="https://www.tiktok.com/@specia_" target="_blank">Tik tok</a>
             </li>
             <li>
                 <i class="bi bi-youtube"></i>
-                <a href="https://www.youtube.com/@notspecia">YouTube</a>
+                <a href="https://www.youtube.com/@notspecia" target="_blank">YouTube</a>
             </li>
         </ul>
 
