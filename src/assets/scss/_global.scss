@@ -19,7 +19,8 @@ html {
 }
 
 body {
-    min-height: 100vh;
+    height: 100%;
+    width: 100%;
     position: relative;
     color: #fff;
     background-color: black; // repalce the canvas animate until will appear
@@ -30,10 +31,8 @@ body {
 
 // ----------------------
 
-// add style on canva bg of the body
-.finisher-header {
+
+#animated-bg {
     width: 100%;
     height: 100%;
-    position: relative;
-    z-index: 0;
 }
