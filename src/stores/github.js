@@ -4,7 +4,7 @@ import { reactive } from "vue"
 
 export const useGithubStore = defineStore("github", () => {
 
-    /* STATE */
+    /* ------------------ STATE ------------------ */
     // state reactive of the object whit array of repos[] + bool loading and string error
     const stateRepository = reactive({
         repositories: [],
@@ -26,7 +26,7 @@ export const useGithubStore = defineStore("github", () => {
     };
 
 
-    /* ACTIONS */
+    /* ------------------ ACTIONS ------------------ */
     // fetching of arrays of repos[]
     const fetchRepositories = async () => {
         try {
@@ -42,7 +42,7 @@ export const useGithubStore = defineStore("github", () => {
         }
     }
 
-    // fetching every repos[] in my account github, then take all the commits and filter them in cronologic order to use in sidebar component
+    // -- fetching every repos[] in my account github, then take all the commits and filter them in cronologic order to use in sidebar component
     const fetchAllCommits = async () => {
         try {
             stateCommits.isLoading = true;
@@ -77,7 +77,7 @@ export const useGithubStore = defineStore("github", () => {
         }
     };
 
-    // fetch of numbers of commits[] for repo
+    // -- fetch of numbers of commits[] for repo
     const fetchRepoCommits = async (repoName) => {
         try {
             const res = await fetch(
@@ -101,7 +101,7 @@ export const useGithubStore = defineStore("github", () => {
     }
 
 
-    // invocate handle functions whit te GET data's of github on App.vue
+    // -- invocate handle functions whit te GET data's of github on App.vue
     const initGithubData = async () => {
         await fetchRepositories();
         await fetchAllCommits();

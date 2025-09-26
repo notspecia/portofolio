@@ -12,7 +12,7 @@ const githubStore = useGithubStore();
     <!-- Sidebar -->
     <aside class="col-12 col-lg-3">
         <!-- profile picture -->
-        <div class="mb-4">
+        <div class="mb-4 d-flex justify-content-center justify-content-lg-start">
             <img src="https://i.pinimg.com/564x/5c/c1/50/5cc15081995e8aa881ac276e5b03f794.jpg" alt="Profile pic"
                 class="hover-zoom rounded-circle profile-img" />
         </div>
@@ -66,6 +66,12 @@ ul {
     display: flex;
     flex-direction: column;
 
+    @media (max-width: $breakpoint-lg) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
     li {
         display: flex;
         align-items: center;
@@ -73,6 +79,10 @@ ul {
         color: white; // colore base
         margin-bottom: 10px;
         transition: all 0.5s ease;
+
+        @media (max-width: $breakpoint-lg) {
+            gap: 5px;
+        }
 
         a {
             color: inherit; // eredita dal <li>
