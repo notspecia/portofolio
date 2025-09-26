@@ -1,5 +1,6 @@
 <script setup>
 import { useGithubStore } from '../../stores/github';
+import CardCommit from '../CardCommit/CardCommit.vue';
 import Labelsection from '../LablelSection/Labelsection.vue';
 import Loader from '../Loader/Loader.vue';
 
@@ -20,10 +21,9 @@ const githubStore = useGithubStore();
         <p v-else-if="githubStore.stateCommits.error" class="text-danger">
             {{ githubStore.stateCommits.error }}
         </p>
-        <div v-else class="row">
-            <p v-for="(comm, index) in githubStore.stateCommits.commits" :key="index">
-                {{ comm.commit.message }}
-            </p>
+        <div v-else v-for="(comm, index) in githubStore.stateCommits.commits" :key="index">
+            <!-- component card for single commit -->
+            <CardCommit :comm="comm" />
         </div>
     </section>
 </template>

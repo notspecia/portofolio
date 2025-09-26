@@ -10,10 +10,11 @@ import WorkExperience from '../../components/WorkExperience/WorkExperience.vue';
     <!-- Main content -->
     <main class="col-12 col-lg-9 d-flex flex-column gap-5">
         <About />
-        <Projects />
-        <WorkExperience />
         <Stack />
         <Tools />
+        <Projects />
+        <WorkExperience />
+
         <!-- contacts -->
         <!-- footer -->
     </main>

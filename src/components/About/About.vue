@@ -4,16 +4,16 @@
 <template>
     <!-- section talks about me -->
     <section>
-        <h1 class="mb-4">Speciale Gabriele <span class="fs-4">(特別ではない)</span></h1>
-        <p class="mb-3">Hey! I'm Speciale Gabriele, a Web developer with two years of experience, focusing on
-            front-end development. I am also an open-source enthusiast, having participated in many open-source projects
-            related to the Nuxt and Vue
-            ecosystems. These experiences have given me a deep understanding of Vue, allowing me to develop high-quality
-            code more quickly and adapt to new technologies faster.
+        <h1 class="mb-4 fw-bolder">Speciale Gabriele <span class="fs-4">(特別ではない)</span></h1>
+        <p class="mb-3">
+            Hey! I'm Speciale Gabriele, a Web Developer with two years of experience, mainly focused on
+            front-end development with Vue 3 and its ecosystem. These experiences have strengthened my ability to write
+            clean, efficient code and to adapt quickly to new technologies.
         </p>
         <p>
-            I am passionate about solving complex and challenging engineering problems and helping teams build more
-            efficient workflows.
+            While my background is rooted in front-end development, I am now expanding my expertise towards backend
+            development, aiming to grow as a full-stack developer. My current stack combines Vue 3 for the frontend with
+            emerging backend skills, allowing me to contribute across the full application lifecycle.
         </p>
     </section>
 </template>
