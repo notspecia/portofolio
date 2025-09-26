@@ -53,3 +53,7 @@ export const tools = [
     { name: 'Windows', logo: windowsLogo },
     { name: 'Powershell', logo: powershellLogo }
 ];
+
+
+// repo excluded from the projects list
+export const excludedRepo = ['VUE', 'ANGULAR', 'REACT', 'C-', 'HTML-CSS', 'JavaScript', 'PHP', 'NodeJS', 'notspecia'];

@@ -8,7 +8,7 @@ defineProps({
 </script>
 
 <template>
-    <div class="row g-4">
+    <div class="row g-3">
         <div v-for="tech in array" :key="tech.name" class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
             <figure class="shake">
                 <img :src="tech.logo" :alt="tech.name" class="mb-2"

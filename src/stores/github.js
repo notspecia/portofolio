@@ -1,5 +1,6 @@
 import { defineStore } from "pinia"
 import { reactive } from "vue"
+import { excludedRepo } from "../utils/costants";
 
 
 export const useGithubStore = defineStore("github", () => {
@@ -33,7 +34,8 @@ export const useGithubStore = defineStore("github", () => {
             stateRepository.isLoading = true;
             const res = await fetch(`https://api.github.com/users/${username}/repos`, { headers });
             const data = await res.json();
-            stateRepository.repositories = data;
+            // filter of the repo excluded from the array (we dont want show them in the projects list)
+            stateRepository.repositories = data.filter(repo => !excludedRepo.includes(repo.name));
             console.log(stateRepository.repositories);
         } catch (err) {
             stateRepository.error = err.message;
