@@ -7,7 +7,7 @@ import Labelsection from '../LablelSection/Labelsection.vue';
 const showLabel = ref(window.innerWidth <= 992);
 
 const onResize = () => {
-    showLabel.value = window.innerWidth >= 992;
+    showLabel.value = window.innerWidth <= 992;
 };
 
 // add and remove event listener on resize of the window
