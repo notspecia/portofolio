@@ -107,5 +107,6 @@ export const useGithubStore = defineStore("github", () => {
         await fetchAllCommits();
     }
 
+
     return { stateRepository, stateCommits, fetchRepoCommits, initGithubData }
 })
