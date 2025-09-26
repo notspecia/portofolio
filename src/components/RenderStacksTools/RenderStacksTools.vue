@@ -27,11 +27,11 @@ figure {
     cursor: pointer;
 
     img {
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
 
         &.more-large {
-            width: 60px;
+            width: 55px;
         }
     }
 

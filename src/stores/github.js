@@ -28,7 +28,8 @@ export const useGithubStore = defineStore("github", () => {
 
 
     /* ------------------ ACTIONS ------------------ */
-    // fetching of arrays of repos[]
+
+    // --fetching of arrays of repos[]
     const fetchRepositories = async () => {
         try {
             stateRepository.isLoading = true;
@@ -56,7 +57,7 @@ export const useGithubStore = defineStore("github", () => {
                     try {
                         // take from every repo latest 20 commits
                         const res = await fetch(
-                            `https://api.github.com/repos/${username}/${repo.name}/commits?per_page=5`,
+                            `https://api.github.com/repos/${username}/${repo.name}/commits?per_page=10`,
                             { headers }
                         );
                         return await res.json();

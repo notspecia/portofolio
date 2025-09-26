@@ -17,10 +17,10 @@ const githubStore = useGithubStore();
 
 
 /* COMPUTED */
-// commit message sliced if too much long
+// commit message sliced if too much long, otherwise show all message commit
 const commitDescription = computed(() => {
     const description = props.comm.commit.message || "";
-    return description.length > 80 ? `${description.slice(0, 80)}...` : description;
+    return description.length > 40 ? `${description.slice(0, 40)}...` : description;
 });
 
 

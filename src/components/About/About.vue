@@ -25,7 +25,7 @@ onUnmounted(() => {
     <section>
         <!-- label description only if screen is < 992px -->
         <Labelsection label="About me" v-if="showLabel" />
-        <h1 class="mb-4 fw-bolder">Speciale Gabriele <span class="fs-4">(特別ではない)</span></h1>
+        <h1 class="mb-4 fw-bolder">Speciale Gabriele <span class="fs-2">(特別ではない)</span></h1>
         <p>
             Hey! I'm Speciale Gabriele, a Web Developer with two years of experience, mainly focused on
             front-end development with Vue 3 and its ecosystem. <br />
@@ -40,4 +40,12 @@ onUnmounted(() => {
 </template>
 
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+h1 {
+    font-size: 2rem;
+
+    @media screen and (max-width: $breakpoint-sm) {
+        font-size: 1.6rem;
+    }
+}
+</style>
