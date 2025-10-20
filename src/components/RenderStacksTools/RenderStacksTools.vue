@@ -12,7 +12,7 @@ defineProps({
         <div v-for="tech in array" :key="tech.name" class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
             <figure class="shake">
                 <img :src="tech.logo" :alt="tech.name" class="mb-2"
-                    :class="tech.name === 'Bootstrap' ? 'more-large' : ''" />
+                    :class="tech.moreLarge ? 'more-large' : ''" />
                 <figcaption>{{ tech.name }}</figcaption>
             </figure>
         </div>
@@ -27,11 +27,11 @@ figure {
     cursor: pointer;
 
     img {
-        width: 45px;
-        height: 45px;
+        width: 50px;
+        height: 50px;
 
         &.more-large {
-            width: 55px;
+            width: 57px;
         }
     }
 

@@ -15,6 +15,8 @@ import apiLogo from '../assets/images/stack-tools/api-rest.svg'
 import strapiLogo from '../assets/images/stack-tools/strapi.svg'
 import wordpressLogo from '../assets/images/stack-tools/wordpress.svg'
 import mysqlLogo from '../assets/images/stack-tools/mysql.svg'
+import ansibleLogo from '../assets/images/stack-tools/ansible.svg'
+import yamlLogo from '../assets/images/stack-tools/yaml.svg'
 
 // logos svg tools used
 import vscodeLogo from '../assets/images/stack-tools/vs-code.svg'
@@ -29,7 +31,7 @@ export const stack = [
     { name: 'HTML5', logo: htmlLogo },
     { name: 'CSS3', logo: cssLogo },
     { name: 'SCSS', logo: scssLogo },
-    { name: 'Bootstrap', logo: bootstrapLogo },
+    { name: 'Bootstrap', logo: bootstrapLogo, moreLarge: true },
     { name: 'JavaScript', logo: jsLogo },
     { name: 'TypeScript', logo: tsLogo },
     { name: 'Vue.js', logo: vueLogo },
@@ -38,10 +40,12 @@ export const stack = [
     { name: 'Node.js', logo: nodeLogo },
     { name: 'Strapi', logo: strapiLogo },
     { name: 'Vite', logo: viteLogo },
-    { name: 'RESTful API', logo: apiLogo },
+    { name: 'RESTful API', logo: apiLogo, moreLarge: true },
     { name: 'PHP', logo: phpLogo },
     { name: 'WordPress', logo: wordpressLogo },
-    { name: 'MySql', logo: mysqlLogo }
+    { name: 'MySql', logo: mysqlLogo },
+    { name: 'Ansible', logo: ansibleLogo },
+    { name: 'YAML', logo: yamlLogo }
 ];
 
 // static array name + svg image imported

@@ -20,7 +20,7 @@ onMounted(async () => {
     mouseControls: true,
     touchControls: true,
     gyroControls: false,
-    minHeight: 200.00,
+    minHeight: 150.00,
     minWidth: 200.00,
     highlightColor: 0x000000,
     midtoneColor: 0x111111,

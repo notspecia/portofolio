@@ -14,7 +14,7 @@ const githubStore = useGithubStore();
         <!-- profile picture -->
         <div class="mb-4 d-flex justify-content-center justify-content-lg-start">
             <img src="https://i.pinimg.com/564x/5c/c1/50/5cc15081995e8aa881ac276e5b03f794.jpg" alt="Profile pic"
-                class="hover-zoom rounded-circle profile-img" />
+                class="rounded-circle profile-img" />
         </div>
 
         <!-- contacts and info about me -->
