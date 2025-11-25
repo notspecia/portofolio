@@ -27,14 +27,15 @@ onUnmounted(() => {
         <Labelsection label="About me" v-if="showLabel" />
         <h1 class="mb-4 fw-bolder">Speciale Gabriele <span class="fs-2">(特別ではない)</span></h1>
         <p>
-            Hey! I'm Speciale Gabriele, a Web Developer with two years of experience, mainly focused on
-            front-end development with Vue 3 and its ecosystem. <br />
-            These experiences have strengthened my ability to
-            write clean, efficient code and to adapt quickly to new technologies. <br /> <br />
-            While my background is rooted in front-end development, I am now expanding my expertise towards backend
-            development, aiming to grow as a full-stack developer. <br /> <br />
-            My current stack combines Vue 3 for the frontend with emerging backend skills, allowing me to contribute
-            across the full application lifecycle.
+            Hello! I am a fullstack web developer with a solid background in <strong>Frontend Development.</strong>
+            I work with HTML, SCSS, JavaScript, and TypeScript, as well as frameworks such as Vue.js, React, and
+            Angular, focusing on code quality, accessibility, SEO optimization, and user experience. <br /> <br />
+            I am skilled in integrating and consuming RESTful APIs and working with backend logic to build modern,
+            scalable, and high‑performing interfaces. <br /> <br />
+            I also participate in DevOps processes and automation, contributing to more efficient and scalable
+            development workflows. <br /> <br />
+            Always looking for new challenges and opportunities to grow professionally and contribute to the development
+            of meaningful web projects.
         </p>
     </section>
 </template>

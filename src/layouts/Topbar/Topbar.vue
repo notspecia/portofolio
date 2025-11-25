@@ -6,15 +6,28 @@
     <nav class="topbar">
         <!-- Right content (icone pulsanti) -->
         <div class="d-flex align-items-center gap-3">
-            <button class="btn btn-dark btn-sm">
+            <!-- CV -->
+            <button class="btn btn-dark btn-sm" data-bs-toggle="tooltip" title="Visualizza il CV">
+
                 <i class="bi bi-file-earmark"></i>
             </button>
-            <button class="btn btn-dark btn-sm">
-                <i class="bi bi-clipboard"></i>
-            </button>
-            <button class="btn btn-dark btn-sm">
-                <i class="bi bi-translate"></i>
-            </button>
+
+            <!-- Language Dropdown -->
+            <div class="dropdown">
+                <button class="btn btn-dark btn-sm dropdown-toggle" data-bs-toggle="dropdown" data-bs-placement="bottom"
+                    title="Cambia lingua">
+                    <i class="bi bi-translate"></i>
+                </button>
+
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                        <button class="dropdown-item" @click="setLanguage('it')">Italiano</button>
+                    </li>
+                    <li>
+                        <button class="dropdown-item" @click="setLanguage('en')">English</button>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 </template>
