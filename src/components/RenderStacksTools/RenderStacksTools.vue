@@ -11,8 +11,7 @@ defineProps({
     <div class="row g-3">
         <div v-for="tech in array" :key="tech.name" class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
             <figure class="shake">
-                <img :src="tech.logo" :alt="tech.name" class="mb-2"
-                    :class="tech.moreLarge ? 'more-large' : ''" />
+                <img :src="tech.logo" :alt="tech.name" class="mb-2" :class="tech.moreLarge ? 'more-large' : ''" />
                 <figcaption>{{ tech.name }}</figcaption>
             </figure>
         </div>
@@ -37,7 +36,14 @@ figure {
 
     figcaption {
         font-size: 0.65rem;
-        color: gainsboro;
+        transition: color 0.3s ease;
+    }
+
+    // effetti aggiuntivi all hover
+    &:hover {
+        figcaption {
+            color: $color-white;
+        }
     }
 }
 </style>

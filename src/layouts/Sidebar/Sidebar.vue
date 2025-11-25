@@ -76,7 +76,6 @@ ul {
         display: flex;
         align-items: center;
         gap: 10px;
-        color: white; // colore base
         margin-bottom: 10px;
         transition: all 0.5s ease;
 
@@ -89,7 +88,7 @@ ul {
         }
 
         &:hover {
-            color: rgb(164, 164, 164);
+            color: $color-white;
         }
 
     }

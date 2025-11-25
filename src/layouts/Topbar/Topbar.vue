@@ -1,4 +1,5 @@
 <script setup>
+import CVpdf from '@/assets/cv-Speciale-Gabriele.pdf';
 </script>
 
 <template>
@@ -7,10 +8,10 @@
         <!-- Right content (icone pulsanti) -->
         <div class="d-flex align-items-center gap-3">
             <!-- CV -->
-            <button class="btn btn-dark btn-sm" data-bs-toggle="tooltip" title="Visualizza il CV">
-
+            <a :href="CVpdf" target="_blank" class="btn btn-dark btn-sm" data-bs-toggle="tooltip"
+                title="Visualizza il CV">
                 <i class="bi bi-file-earmark"></i>
-            </button>
+            </a>
 
             <!-- Language Dropdown -->
             <div class="dropdown">

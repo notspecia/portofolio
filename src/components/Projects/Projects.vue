@@ -12,7 +12,7 @@ const githubStore = useGithubStore();
 <template>
     <!-- section projects fetched -->
     <section>
-        <labelsection label="Projects" />
+        <labelsection label="Personal Projects" />
         <!-- 
         Card container with repositories retrieved via GET from github.com
         Recycling the data via the v-for directive in a component with CardRepo.vue 
