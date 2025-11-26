@@ -53,7 +53,7 @@ export const tools = [
     { name: 'VSCode', logo: vscodeLogo },
     { name: 'GIT', logo: gitLogo },
     { name: 'Postman', logo: postmanLogo },
-    { name: 'Figma', logo: figmaLogo },
+    { name: 'Figma', logo: figmaLogo, moreLarge: true },
     { name: 'Windows', logo: windowsLogo },
     { name: 'Powershell', logo: powershellLogo }
 ];

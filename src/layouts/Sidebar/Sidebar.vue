@@ -1,20 +1,18 @@
 <script setup>
-import { useGithubStore } from '../../stores/github';
 import Labelsection from '../../components/LablelSection/Labelsection.vue';
 import LatestCommits from '../../components/LatestCommits/LatestCommits.vue';
-
-
-/* REPOSITORIES + COMMITS PINIA STATE */
-const githubStore = useGithubStore();
 </script>
+
 
 <template>
     <!-- Sidebar -->
     <aside class="col-12 col-lg-3">
-        <!-- profile picture -->
+        <!-- profile picture (inside flex for center in mobile device) -->
         <div class="mb-4 d-flex justify-content-center justify-content-lg-start">
-            <img src="https://i.pinimg.com/564x/5c/c1/50/5cc15081995e8aa881ac276e5b03f794.jpg" alt="Profile pic"
-                class="rounded-circle profile-img" />
+            <div class="profile-wrapper">
+                <img src="https://i.pinimg.com/564x/5c/c1/50/5cc15081995e8aa881ac276e5b03f794.jpg" alt="Profile pic"
+                    class="profile-img" />
+            </div>
         </div>
 
         <!-- contacts and info about me -->
@@ -36,14 +34,6 @@ const githubStore = useGithubStore();
                 <i class="bi bi-linkedin"></i>
                 <a href="https://www.linkedin.com/in/speciale-gabriele-a6aa07312/" target="_blank">LinkedIn</a>
             </li>
-            <li>
-                <i class="bi bi-tiktok"></i>
-                <a href="https://www.tiktok.com/@specia_" target="_blank">Tik tok</a>
-            </li>
-            <li>
-                <i class="bi bi-youtube"></i>
-                <a href="https://www.youtube.com/@notspecia" target="_blank">YouTube</a>
-            </li>
         </ul>
 
         <!-- latest commits on my github account -->
@@ -51,15 +41,42 @@ const githubStore = useGithubStore();
     </aside>
 </template>
 
+
 <style scoped lang="scss">
-// pic image 
-.profile-img {
+.profile-wrapper {
+    position: relative;
     width: 160px;
     height: 160px;
-    object-fit: cover;
-    border: 2px solid rgba(255, 255, 255, 0.15);
-    border-radius: 50%;
+
+    &::after,
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        width: 100%;
+        height: 100%;
+        background-image: conic-gradient(blue, rgb(149, 175, 254), transparent 50%);
+        padding: 84px;
+        border-radius: 50%;
+        animation: spin 2s linear infinite;
+    }
+
+    &::before {
+        filter: blur(1rem);
+        opacity: 0.7;
+    }
+
+    .profile-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
 }
+
+
 
 // link list
 ul {

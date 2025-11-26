@@ -5,12 +5,12 @@
     border: 1px solid rgba(255, 255, 255, 0.15);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.25s ease;
+    transform-style: preserve-3d;
 
     &:hover {
         background: rgba(255, 255, 255, 0.14);
-        transform: translateY(-2px);
+        transform: translateY(-2px) rotateX(6deg) rotateY(2deg);
         box-shadow: 0 12px 28px rgba(0, 0, 0, 0.7);
     }
-
 }

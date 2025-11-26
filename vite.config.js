@@ -17,6 +17,7 @@ export default defineConfig({
       scss: {
         additionalData: `
         @import "@/assets/scss/_colors.scss";
+        @import "@/assets/scss/animations.scss";
         @import "@/assets/scss/_typography.scss";
         @import "@/assets/scss/_breakpoints.scss";
       `

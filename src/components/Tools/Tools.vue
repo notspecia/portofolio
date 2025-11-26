@@ -2,7 +2,6 @@
 import { tools } from '../../utils/costants';
 import Labelsection from '../LablelSection/Labelsection.vue';
 import RenderStacksTools from '../RenderStacksTools/RenderStacksTools.vue';
-
 </script>
 
 <template>

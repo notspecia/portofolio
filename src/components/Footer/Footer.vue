@@ -56,6 +56,7 @@ footer {
         }
 
         span {
+            font-weight: $font-weight-bold;
             margin-right: 7px;
         }
     }

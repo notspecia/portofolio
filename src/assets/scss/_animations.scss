@@ -34,26 +34,12 @@
     }
 }
 
-
-/* animation applied principaly to the borders of the elements */
-@keyframes borderLight {
-    0% {
-        box-shadow: rgba(255, 255, 255, 0) 0 0 0 0;
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
     }
 
-    25% {
-        box-shadow: rgba(255, 255, 255, 0.8) 0 0 15px 5px;
-    }
-
-    50% {
-        box-shadow: aqua 0 0 30px 10px;
-    }
-
-    75% {
-        box-shadow: rgba(255, 255, 255, 0.8) 0 0 15px 5px;
-    }
-
-    100% {
-        box-shadow: rgba(255, 255, 255, 0) 0 0 0 0;
+    to {
+        transform: rotate(360deg);
     }
 }
