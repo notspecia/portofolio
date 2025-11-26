@@ -17,7 +17,7 @@ defineProps({
 .custom-label {
     display: inline-block;
     color: #fff;
-    font-size: 1.05rem;
+    font-size: 1.2rem;
     font-weight: $font-weight-semibold;
     padding: 0.125rem 0.75rem;
     border: 1px solid rgba(220, 220, 220, 0.288);

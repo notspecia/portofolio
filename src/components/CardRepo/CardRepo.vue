@@ -68,8 +68,8 @@ onMounted(async () => {
 <style scoped lang="scss">
 .repo-logo {
   width: 40px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .card-title {
@@ -93,10 +93,11 @@ onMounted(async () => {
     display: flex;
     align-items: center;
 
+    // icons for star, img for commits
     i,
     img {
-      font-size: 13px;
-      width: 13px;
+      font-size: 0.8rem;
+      width: 0.8rem;
     }
   }
 }

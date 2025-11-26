@@ -1,8 +1,6 @@
 <script setup>
 </script>
 
-
-
 <template>
     <div className="loader-overlay">
         <div className="spinner-border loader-spinner mt-5" role="status">
@@ -10,8 +8,6 @@
         </div>
     </div>
 </template>
-
-
 
 <style scoped lang="scss">
 .loader-overlay {
@@ -25,6 +21,6 @@
 .loader-spinner {
     width: 3rem;
     height: 3rem;
-    color: aqua;
+    color: rgb(69, 79, 219);
 }
 </style>

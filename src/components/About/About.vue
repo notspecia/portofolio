@@ -31,12 +31,12 @@ onUnmounted(() => {
                 Development</span>.
             I work with HTML, SCSS, JavaScript, and TypeScript, as well as frameworks such as <span
                 class="highlight">Vue.js</span>, React, and
-            Angular, focusing on code quality, accessibility, SEO optimization, and user experience. <br />
+            Angular, focusing on code quality, accessibility, SEO optimization, and user experience. <br /><br />
             I am skilled in integrating and consuming <span class="highlight">RESTful APIs</span> and working with
             backend logic to build modern,
             scalable, and high‑performing interfaces. <br /> <br />
             I also participate in DevOps processes and automation, contributing to more efficient and scalable
-            development workflows. <br />
+            development workflows. <br /><br />
             Always looking for new challenges and opportunities to grow professionally and contribute to the development
             of meaningful web projects.
         </p>
@@ -46,11 +46,11 @@ onUnmounted(() => {
 
 <style scoped lang="scss">
 h1 {
-    font-size: 2rem;
+    font-size: 2.8rem;
     color: $color-white;
 
     @media screen and (max-width: $breakpoint-sm) {
-        font-size: 1.6rem;
+        font-size: 2.3rem;
     }
 }
 </style>

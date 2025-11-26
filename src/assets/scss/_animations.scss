@@ -34,6 +34,7 @@
     }
 }
 
+/* spin animation keyframes */
 @keyframes spin {
     from {
         transform: rotate(0deg);
@@ -41,5 +42,31 @@
 
     to {
         transform: rotate(360deg);
+    }
+}
+
+/* change color animation */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* change color animation */
+@keyframes changeBorder {
+    0% {
+        background-image: conic-gradient(blue, rgb(149, 175, 254), transparent 50%);
+    }
+
+    50% {
+        background-image: conic-gradient(rgb(149, 175, 254), rgb(11, 9, 82), transparent 50%);
+    }
+
+    100% {
+        background-image: conic-gradient(blue, rgb(149, 175, 254), transparent 50%);
     }
 }
