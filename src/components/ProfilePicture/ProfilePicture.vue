@@ -28,9 +28,9 @@
         width: 100%;
         height: 100%;
         background-image: conic-gradient(blue, rgb(191, 206, 249), transparent 50%);
-        padding: 85px;
+        padding: 83px;
         border-radius: 50%;
-        animation: spin 2s linear infinite
+        animation: spin 7s linear infinite
     }
 
     &::before {

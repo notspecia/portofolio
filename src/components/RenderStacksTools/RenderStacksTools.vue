@@ -1,10 +1,13 @@
 <script setup>
-defineProps({
+const props = defineProps({
     array: {
         type: Array,
         required: true
     }
-})
+});
+
+console.log(props.array);
+
 </script>
 
 <template>
@@ -25,13 +28,10 @@ figure {
     align-items: center;
     cursor: pointer;
 
+    // per le immagini MODIFICABILI tramite css 
     img {
         width: 50px;
         height: 50px;
-
-        &.more-large {
-            width: 57px;
-        }
     }
 
     figcaption {

@@ -12,7 +12,7 @@ const githubStore = useGithubStore();
 <template>
     <!-- section latest commits filtered -->
     <section>
-        <labelsection label="Latest Commits" />
+        <labelsection label="Recent Commits" />
         <!-- 
         Card container with commits retrieved via GET and filtered from github.com
         Recycling the data via the v-for directive in a component with CardCommit.vue 

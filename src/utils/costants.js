@@ -31,7 +31,7 @@ export const stack = [
     { name: 'HTML5', logo: htmlLogo },
     { name: 'CSS3', logo: cssLogo },
     { name: 'SCSS', logo: scssLogo },
-    { name: 'Bootstrap', logo: bootstrapLogo, moreLarge: true },
+    { name: 'Bootstrap', logo: bootstrapLogo },
     { name: 'JavaScript', logo: jsLogo },
     { name: 'TypeScript', logo: tsLogo },
     { name: 'Vue.js', logo: vueLogo },
@@ -40,7 +40,7 @@ export const stack = [
     { name: 'Node.js', logo: nodeLogo },
     { name: 'Strapi', logo: strapiLogo },
     { name: 'Vite', logo: viteLogo },
-    { name: 'RESTful API', logo: apiLogo, moreLarge: true },
+    { name: 'RESTful API', logo: apiLogo },
     { name: 'PHP', logo: phpLogo },
     { name: 'WordPress', logo: wordpressLogo },
     { name: 'MySql', logo: mysqlLogo },
@@ -53,7 +53,7 @@ export const tools = [
     { name: 'VSCode', logo: vscodeLogo },
     { name: 'GIT', logo: gitLogo },
     { name: 'Postman', logo: postmanLogo },
-    { name: 'Figma', logo: figmaLogo, moreLarge: true },
+    { name: 'Figma', logo: figmaLogo },
     { name: 'Windows', logo: windowsLogo },
     { name: 'Powershell', logo: powershellLogo }
 ];

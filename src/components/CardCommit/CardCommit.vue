@@ -57,6 +57,7 @@ const extractRepoFromCommitUrl = () => {
 
 <style scoped lang="scss">
 .card {
+
     .commit-logo {
         width: 1.2rem;
     }

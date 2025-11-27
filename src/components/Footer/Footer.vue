@@ -11,20 +11,20 @@
         <div class="container-tools">
             <p>Made whit
                 <img src="@/assets/images/footer-tools/vue.svg" alt="Vue logo" class="icon" />
-                <span style="color: #41b883;">Vue</span>
+                <a href="https://vuejs.org/" target="_blank" style="color: #41b883;">Vue</a>
                 and
                 <img src="@/assets/images/footer-tools/bootstrap.svg" alt="Boostrap logo" class="icon" />
-                <span style="color: #7311f6;">Boostrap</span>
+                <a href="https://getbootstrap.com/" target="_blank" style="color: #7311f6;">Boostrap</a>
             </p>
             <span>.</span>
             <p>Data from
                 <img src="@/assets/images/footer-tools/github.webp" alt="Github logo" class="icon" />
-                github API
+                <a href="https://docs.github.com/en/rest" target="_blank" style="color: #e4ebf1;">github API</a>
             </p>
             <span>.</span>
             <p>Deploy at
                 <img src="@/assets/images/footer-tools/vercel.png" alt="Vercel logo" class="icon" />
-                <span>Vercel</span>
+                <a href="https://vercel.com/" target="_blank" style="color: #e4ebf1;">Vercel</a>
             </p>
         </div>
     </footer>
@@ -55,8 +55,9 @@ footer {
             margin-left: 7px;
         }
 
-        span {
+        a {
             font-weight: $font-weight-bold;
+            text-decoration: none;
             margin-right: 7px;
         }
     }

@@ -1,7 +1,7 @@
 <script setup>
-import { tools } from '../../utils/costants';
-import Labelsection from '../LablelSection/Labelsection.vue';
-import RenderStacksTools from '../RenderStacksTools/RenderStacksTools.vue';
+import { tools } from '@/utils/costants';
+import Labelsection from '@/components/LablelSection/Labelsection.vue';
+import RenderStacksTools from '@/components/RenderStacksTools/RenderStacksTools.vue';
 </script>
 
 <template>

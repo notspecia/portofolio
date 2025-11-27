@@ -44,6 +44,7 @@ ul {
     @media (max-width: $breakpoint-lg) {
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 15px;
     }
 
@@ -59,6 +60,7 @@ ul {
         }
 
         a {
+            text-decoration: none;
             color: inherit; // eredita dal <li>
         }
 

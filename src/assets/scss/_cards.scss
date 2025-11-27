@@ -1,16 +1,37 @@
 // to use for cards repo projects and last commits.
 .card {
-    background: rgba(255, 255, 255, 0.05);
+    position: relative;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.07);
     color: #fff;
     border: 1px solid rgba(255, 255, 255, 0.15);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     cursor: pointer;
-    transition: all 0.25s ease;
-    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 250%;
+        height: 250%;
+        background: linear-gradient(0deg,
+                transparent,
+                transparent 30%,
+                rgba(255, 255, 255, 0.4));
+        transform: rotate(-30deg);
+        transition: all 0.5s ease;
+        opacity: 0;
+    }
 
     &:hover {
-        background: rgba(255, 255, 255, 0.14);
-        transform: translateY(-2px) rotateX(6deg) rotateY(2deg);
-        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.7);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        transform: scale(1.03);
+    }
+
+    &:hover::before {
+        opacity: 1;
+        transform: rotate(-30deg) translateY(100%);
     }
 }

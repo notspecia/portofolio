@@ -22,11 +22,11 @@ onMounted(async () => {
     gyroControls: false,
     minHeight: 150.00,
     minWidth: 180.00,
-    highlightColor: 0x000000,
+    highlightColor: 0x0d1117,
     midtoneColor: 0x111111,
     lowlightColor: 0x191970,
-    baseColor: 0x000000,
-    blurFactor: 1.2,
+    baseColor: 0x0d1117,
+    blurFactor: 1.4,
     speed: 2
   });
 });
@@ -46,7 +46,11 @@ onMounted(async () => {
 
 <style scoped lang="scss">
 .container {
-  padding-top: 150px;
-  padding-bottom: 40px;
+  padding-top: 140px;
+  padding-bottom: 50px;
+
+  @media screen and (max-width: $breakpoint-lg) {
+    padding-top: 100px;
+  }
 }
 </style>
