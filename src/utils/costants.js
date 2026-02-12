@@ -38,11 +38,11 @@ export const stack = [
     { name: 'React', logo: reactLogo },
     { name: 'Angular', logo: angularLogo },
     { name: 'Node.js', logo: nodeLogo },
-    { name: 'Strapi', logo: strapiLogo },
     { name: 'Vite', logo: viteLogo },
+    { name: 'Strapi', logo: strapiLogo },
+    { name: 'WordPress', logo: wordpressLogo },
     { name: 'RESTful API', logo: apiLogo },
     { name: 'PHP', logo: phpLogo },
-    { name: 'WordPress', logo: wordpressLogo },
     { name: 'MySql', logo: mysqlLogo },
     { name: 'Ansible', logo: ansibleLogo },
     { name: 'YAML', logo: yamlLogo }

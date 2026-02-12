@@ -1,11 +1,15 @@
 import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
 import { fileURLToPath, URL } from 'node:url'
+import vue from '@vitejs/plugin-vue'
+import vueDevTools from 'vite-plugin-vue-devtools'
 
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [
+    vue(),
+    vueDevTools(),
+  ],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
@@ -16,10 +20,10 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         additionalData: `
-        @import "@/assets/scss/_colors.scss";
-        @import "@/assets/scss/animations.scss";
-        @import "@/assets/scss/_typography.scss";
-        @import "@/assets/scss/_breakpoints.scss";
+        @import "@/styles/_colors.scss";
+        @import "@/styles/animations.scss";
+        @import "@/styles/_typography.scss";
+        @import "@/styles/_breakpoints.scss";
       `
       }
     }

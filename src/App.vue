@@ -1,9 +1,9 @@
 <script setup>
 import { onMounted } from 'vue';
-import { useGithubStore } from './stores/github';
-import Main from './layouts/Main/Main.vue';
-import Sidebar from './layouts/Sidebar/Sidebar.vue';
-import Topbar from './layouts/Topbar/Topbar.vue';
+import { useGithubStore } from '@/stores/github';
+import Topbar from '@/layouts/Topbar.vue';
+import Main from '@/layouts/Main.vue';
+import Sidebar from '@/layouts/Sidebar.vue';
 
 
 /* REPOSITORIES + COMMITS PINIA STATE */

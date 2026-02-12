@@ -1,7 +1,7 @@
 <script setup>
-import ProfilePicture from '@/components/ProfilePicture/ProfilePicture.vue';
-import Labelsection from '@/components/LablelSection/Labelsection.vue';
-import LatestCommits from '@/components/LatestCommits/LatestCommits.vue';
+import ProfilePicture from '@/components/ProfilePicture.vue';
+import Labelsection from '@/components/Labelsection.vue';
+import LatestCommits from '@/components/LatestCommits.vue';
 </script>
 
 

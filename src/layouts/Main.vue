@@ -1,10 +1,10 @@
 <script setup>
-import About from '@/components/About/About.vue';
-import Projects from '@/components/Projects/Projects.vue';
-import Stack from '@/components/Stack/Stack.vue';
-import Tools from '@/components/Tools/Tools.vue';
-import WorkExperience from '@/components/WorkExperience/WorkExperience.vue';
-import Footer from '@/components/Footer/Footer.vue';
+import About from '@/components/About.vue';
+import Projects from '@/components/Projects.vue';
+import Stack from '@/components/Stack.vue';
+import Tools from '@/components/Tools.vue';
+import WorkExperience from '@/components/WorkExperience.vue';
+import Footer from '@/layouts/Footer.vue';
 </script>
 
 <template>

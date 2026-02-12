@@ -1,7 +1,7 @@
 <script setup>
 import { tools } from '@/utils/costants';
-import Labelsection from '@/components/LablelSection/Labelsection.vue';
-import RenderStacksTools from '@/components/RenderStacksTools/RenderStacksTools.vue';
+import Labelsection from './Labelsection.vue';
+import RenderStacksTools from './RenderStacksTools.vue';
 </script>
 
 <template>
@@ -11,5 +11,3 @@ import RenderStacksTools from '@/components/RenderStacksTools/RenderStacksTools.
         <RenderStacksTools :array="tools" />
     </section>
 </template>
-
-<style scoped lang="scss"></style>

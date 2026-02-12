@@ -1,5 +1,5 @@
 <script setup>
-import CVpdf from '@/assets/cv-Speciale-Gabriele.pdf';
+import CVpdf from '/cv-Speciale-Gabriele.pdf';
 </script>
 
 

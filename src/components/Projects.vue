@@ -1,8 +1,8 @@
 <script setup>
-import { useGithubStore } from '../../stores/github';
-import CardRepo from '../CardRepo/CardRepo.vue';
-import Labelsection from '../LablelSection/Labelsection.vue';
-import Loader from '../Loader/Loader.vue';
+import { useGithubStore } from '../stores/github';
+import CardRepo from './CardRepo.vue';
+import Labelsection from './Labelsection.vue';
+import Loader from './Loader.vue';
 
 
 /* REPOSITORIES + COMMITS PINIA STATE */

@@ -1,7 +1,7 @@
 <script setup>
 import { computed, onMounted, ref } from "vue";
-import { useGithubStore } from "../../stores/github";
-import commitLogo from "../../assets/images/stack-tools/commit.svg";
+import { useGithubStore } from "@/stores/github";
+import commitLogo from "@/assets/images/stack-tools/commit.svg";
 
 // props repo cycled into parent
 const props = defineProps({

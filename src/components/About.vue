@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted, onUnmounted, ref } from 'vue';
-import Labelsection from '../LablelSection/Labelsection.vue';
+import Labelsection from './Labelsection.vue';
 
 
 // check if show the label (only on lg > and up)

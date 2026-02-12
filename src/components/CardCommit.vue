@@ -1,7 +1,7 @@
 <script setup>
 import { computed } from 'vue';
-import { useGithubStore } from '../../stores/github';
-import commitLogo from '../../assets/images/stack-tools/commit.svg'
+import { useGithubStore } from '../stores/github';
+import commitLogo from '@/assets/images/stack-tools/commit.svg'
 
 
 // props commits cycled into parent

@@ -5,7 +5,7 @@ import App from './App.vue';
 
 
 // import scss custom main file + bootstrap styles + icons + js interactions
-import './assets/scss/main.scss'
+import '@/styles/main.scss'
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 

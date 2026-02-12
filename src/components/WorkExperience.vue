@@ -1,5 +1,5 @@
 <script setup>
-import Labelsection from '../LablelSection/Labelsection.vue';
+import Labelsection from './Labelsection.vue';
 
 </script>
 
