@@ -6,7 +6,7 @@
 <template>
     <footer>
         <div>
-            <p class="text-center">© 2025 Speciale Gabriele. All rights reserved.</p>
+            <p class="text-center">© 2026 Speciale Gabriele. All rights reserved.</p>
         </div>
         <div class="container-tools">
             <p>Made whit

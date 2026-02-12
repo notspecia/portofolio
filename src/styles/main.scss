@@ -1,8 +1,5 @@
-// import of bootstrap styles
-@import "bootstrap/scss/bootstrap";
-
-// styles scss styles used on the project
-@import "global";
-@import "layout";
-@import "animations";
-@import "cards";
+// import index scss file of each section style to use on main.js entry point
+// exposed vars style scss
+@use './abstracts/' as *;
+@use "./components/" as *;
+@use "./base/" as *;

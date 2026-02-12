@@ -19,12 +19,7 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `
-        @import "@/styles/_colors.scss";
-        @import "@/styles/animations.scss";
-        @import "@/styles/_typography.scss";
-        @import "@/styles/_breakpoints.scss";
-      `
+        additionalData: `@use "@/styles/abstracts" as *;`
       }
     }
   }

@@ -1,3 +1,7 @@
+// exposed vars style scss
+@use '../abstracts/' as *;
+
+
 // rules globals on the project fotn seize whit media query
 html {
     box-sizing: border-box;

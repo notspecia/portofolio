@@ -1,9 +1,13 @@
+// exposed vars style scss
+@use '../abstracts/' as *;
+
+
 // to use for cards repo projects and last commits.
 .card {
     position: relative;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.07);
-    color: #fff;
+    color: $color-white;
     border: 1px solid rgba(255, 255, 255, 0.15);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     cursor: pointer;

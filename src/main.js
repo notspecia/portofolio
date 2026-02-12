@@ -4,10 +4,13 @@ import { i18n } from './i18n'; // import i18n configuration languages
 import App from './App.vue';
 
 
-// import scss custom main file + bootstrap styles + icons + js interactions
-import '@/styles/main.scss'
-import 'bootstrap-icons/font/bootstrap-icons.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+// import of bootstrap styles and scripts, icons
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+// import scss custom main file 
+import "@/styles/main.scss";
+
 
 const app = createApp(App)
 const pinia = createPinia()
