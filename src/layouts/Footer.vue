@@ -49,6 +49,12 @@ footer {
         justify-content: center;
         gap: 1.7rem;
 
+        @media (max-width: $breakpoint-xl) {
+            span {
+                display: none;
+            }
+        }
+
         img {
             width: 25px;
             margin-right: 3px;

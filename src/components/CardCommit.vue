@@ -67,6 +67,7 @@ const extractRepoFromCommitUrl = () => {
     }
 
     .card-text {
+        color: $color-gray-400;
         font-size: 0.7rem;
     }
 }

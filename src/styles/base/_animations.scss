@@ -1,21 +1,12 @@
 // exposed vars style scss
 @use '../abstracts/' as *;
 
-
-// hover zoom
-.hover-zoom {
-    transition: transform 0.3s ease;
-
-    &:hover {
-        transform: scale(1.05);
-    }
-}
-
-// shake animation on hover
+//  ---------------------------------------------------------
+// shake animation on hover ---------------------------------
+//  ---------------------------------------------------------
 .shake:hover {
     animation: shake 0.5s ease-in-out infinite;
 }
-
 
 /* shake animation keyframes */
 @keyframes shake {
@@ -38,7 +29,9 @@
     }
 }
 
-/* spin animation keyframes */
+//  ---------------------------------------------------------
+/* spin animation keyframes --------------------------------- */
+//  ---------------------------------------------------------
 @keyframes spin {
     from {
         transform: rotate(0deg);
@@ -49,18 +42,9 @@
     }
 }
 
-/* change color animation */
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-/* change color animation */
+//  ---------------------------------------------------------
+/* change color animation ----------------------------------- */
+//  ---------------------------------------------------------
 @keyframes changeBorder {
     0% {
         background-image: conic-gradient(blue, rgb(149, 175, 254), transparent 50%);

@@ -6,7 +6,7 @@ import Labelsection from './Labelsection.vue';
 <template>
     <!-- section work experiences -->
     <section>
-        <Labelsection label="Work Experience" />
+        <Labelsection label="Work experience" />
         <ul>
             <li>Worked at CSI Piemonte developing front-end applications using Vue 3 and TypeScript. Contributed to
                 multiple projects, including Bonus VESTA and internal dashboards, following accessibility guidelines and

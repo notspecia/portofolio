@@ -35,15 +35,16 @@ figure {
     }
 
     figcaption {
+        font-family: $font-family-hand;
         font-size: 0.65rem;
         transition: color 0.3s ease;
-    }
 
-    // effetti aggiuntivi all hover
-    &:hover {
-        figcaption {
+        // effetti aggiuntivi all hover
+        &:hover {
             color: $color-white;
         }
     }
+
+
 }
 </style>

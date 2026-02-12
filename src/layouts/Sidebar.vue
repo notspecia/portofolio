@@ -52,6 +52,7 @@ ul {
         display: flex;
         align-items: center;
         gap: 10px;
+        font-family: $font-family-hand;
         margin-bottom: 10px;
         transition: all 0.5s ease;
 
@@ -66,6 +67,7 @@ ul {
 
         &:hover {
             color: $color-white;
+            text-decoration: underline;
         }
 
     }

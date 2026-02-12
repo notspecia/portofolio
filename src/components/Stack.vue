@@ -6,7 +6,7 @@ import RenderStacksTools from './RenderStacksTools.vue';
 
 <template>
     <!-- section stack used -->
-    <section>
+    <section class="mb-3">
         <labelsection label="Stack" />
         <RenderStacksTools :array="stack" />
     </section>

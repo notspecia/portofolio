@@ -1,0 +1,10 @@
+// exposed vars style scss
+@use '../abstracts/' as *;
+
+
+.highlight {
+    color: $color-white;
+    background-color: rgba(128, 128, 128, 0.2);
+    padding: 0.2rem 0.35rem;
+    border-radius: 0.3rem;
+}

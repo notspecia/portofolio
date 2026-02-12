@@ -17,6 +17,7 @@ defineProps({
 .custom-label {
     display: inline-block;
     color: #fff;
+    font-family: $font-family-hand;
     font-size: 1.1rem;
     font-weight: $font-weight-semibold;
     padding: 0.125rem 0.75rem;

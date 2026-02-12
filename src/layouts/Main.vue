@@ -9,15 +9,21 @@ import Footer from '@/layouts/Footer.vue';
 
 <template>
     <!-- Main content -->
-    <main class="col-12 col-lg-9 d-flex flex-column gap-5">
+    <main class="col-12 col-lg-9 d-flex flex-column">
         <About />
-        <Stack />
-        <Tools />
+        <div>
+            <Stack />
+            <Tools />
+        </div>
         <Projects />
         <WorkExperience />
-        <hr class="w-25 mx-auto my-2" />
+        <hr class="w-50 mx-auto my-2" />
         <Footer />
     </main>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+main {
+    gap: 4rem;
+}
+</style>

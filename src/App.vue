@@ -24,7 +24,7 @@ onMounted(async () => {
     minWidth: 180.00,
     highlightColor: 0x0d1117,
     midtoneColor: 0x111111,
-    lowlightColor: 0x191970,
+    lowlightColor: 0x101970,
     baseColor: 0x0d1117,
     blurFactor: 1.4,
     speed: 2
@@ -36,7 +36,7 @@ onMounted(async () => {
 <template>
   <Topbar />
   <div class="container">
-    <div class="row g-5">
+    <div class="row g-5 clearfix">
       <Sidebar />
       <Main />
     </div>

@@ -76,6 +76,7 @@ onMounted(async () => {
   font-size: 1.1rem;
 
   span {
+    color: $color-gray-500;
     font-size: 0.9rem;
   }
 }

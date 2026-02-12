@@ -30,7 +30,7 @@
         background-image: conic-gradient(blue, rgb(191, 206, 249), transparent 50%);
         padding: 83px;
         border-radius: 50%;
-        animation: spin 7s linear infinite
+        animation: spin 2s linear infinite;
     }
 
     &::before {
