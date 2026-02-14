@@ -3,6 +3,7 @@ import htmlLogo from '@/assets/images/stack-tools/html.svg'
 import cssLogo from '@/assets/images/stack-tools/css.svg'
 import scssLogo from '@/assets/images/stack-tools/sass.svg'
 import bootstrapLogo from '@/assets/images/stack-tools/bootstrap.svg'
+import tailwindLogo from '@/assets/images/stack-tools/tailwind.svg'
 import jsLogo from '@/assets/images/stack-tools/javascript.svg'
 import tsLogo from '@/assets/images/stack-tools/typescript.svg'
 import phpLogo from '@/assets/images/stack-tools/php.svg'
@@ -15,7 +16,6 @@ import apiLogo from '@/assets/images/stack-tools/api-rest.svg'
 import strapiLogo from '@/assets/images/stack-tools/strapi.svg'
 import wordpressLogo from '@/assets/images/stack-tools/wordpress.svg'
 import mysqlLogo from '@/assets/images/stack-tools/mysql.svg'
-import ansibleLogo from '@/assets/images/stack-tools/ansible.svg'
 import yamlLogo from '@/assets/images/stack-tools/yaml.svg'
 
 // logos svg tools used
@@ -32,19 +32,19 @@ export const stack = [
     { name: 'CSS3', logo: cssLogo },
     { name: 'SCSS', logo: scssLogo },
     { name: 'Bootstrap', logo: bootstrapLogo },
+    { name: 'Tailwind', logo: tailwindLogo },
     { name: 'JavaScript', logo: jsLogo },
     { name: 'TypeScript', logo: tsLogo },
     { name: 'Vue.js', logo: vueLogo },
     { name: 'React', logo: reactLogo },
     { name: 'Angular', logo: angularLogo },
     { name: 'Node.js', logo: nodeLogo },
-    { name: 'Vite', logo: viteLogo },
     { name: 'Strapi', logo: strapiLogo },
+    { name: 'Vite', logo: viteLogo },
     { name: 'WordPress', logo: wordpressLogo },
     { name: 'RESTful API', logo: apiLogo },
     { name: 'PHP', logo: phpLogo },
     { name: 'MySql', logo: mysqlLogo },
-    { name: 'Ansible', logo: ansibleLogo },
     { name: 'YAML', logo: yamlLogo }
 ];
 

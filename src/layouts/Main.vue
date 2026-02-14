@@ -9,21 +9,49 @@ import Footer from '@/layouts/Footer.vue';
 
 <template>
     <!-- Main content -->
-    <main class="col-12 col-lg-9 d-flex flex-column">
+    <main class="col-12 col-lg-9 d-flex flex-column gap-5">
         <About />
-        <div>
-            <Stack />
+        <div class="stack-tools">
+            <Stack class="mb-4" />
             <Tools />
         </div>
-        <Projects />
-        <WorkExperience />
+        <Projects class="projects" />
+        <WorkExperience class="section-reveal" />
         <hr class="w-50 mx-auto my-2" />
         <Footer />
     </main>
 </template>
 
 <style scoped lang="scss">
-main {
-    gap: 4rem;
+// desktop + laptops
+.stack-tools {
+    animation: sectionReveal both;
+    animation-timeline: view(85% 30%);
+
+    // tablets
+    @media (max-width: $breakpoint-md) {
+        animation-timeline: view(90% 30%);
+    }
+
+    // mobile small screen 
+    @media (max-width: $breakpoint-sm) {
+        animation-timeline: view(110% 1%);
+    }
+}
+
+// desktop + laptops
+.projects {
+    animation: sectionReveal both;
+    animation-timeline: view(140% 30%);
+
+    // tablets
+    @media (max-width: $breakpoint-md) {
+        animation-timeline: view(200% 30%);
+    }
+
+    // mobile small screen 
+    @media (max-width: $breakpoint-sm) {
+        animation-timeline: view(310% 25%);
+    }
 }
 </style>
