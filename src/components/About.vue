@@ -56,4 +56,8 @@ h1 {
         font-size: 2.3rem;
     }
 }
+
+p {
+    line-height: 2.1;
+}
 </style>

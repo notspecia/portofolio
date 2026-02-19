@@ -1,0 +1,11 @@
+// exposed vars style scss
+@use '../abstracts/' as *;
+
+
+:root {
+    --bg-primary: #{$color-gray-900};
+    --bg-secondary: #{$color-gray-800};
+    --text-primary: #{$color-white};
+    --text-secondary: #{$color-gray-400};
+    --border-color: #{$color-gray-700};
+}
