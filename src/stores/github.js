@@ -32,6 +32,7 @@ export const useGithubStore = defineStore("github", () => {
     // --fetching of arrays of repos[]
     const fetchRepositories = async () => {
         try {
+            stateRepository.error = null;
             stateRepository.isLoading = true;
             const res = await fetch(`https://api.github.com/users/${username}/repos`, { headers });
             const data = await res.json();

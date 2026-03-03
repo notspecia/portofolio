@@ -36,7 +36,7 @@ onMounted(async () => {
 <template>
   <Topbar />
   <div class="container">
-    <div class="row g-0 g-lg-5 clearfix">
+    <div class="row g-0 g-lg-5 clearfix mt-lg-1">
       <Sidebar />
       <Main />
     </div>

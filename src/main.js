@@ -12,8 +12,8 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "@/styles/main.scss";
 
 
-const app = createApp(App)
-const pinia = createPinia()
+const app = createApp(App);
+const pinia = createPinia();
 
 app
     .use(pinia)
