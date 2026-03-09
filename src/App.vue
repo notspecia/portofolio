@@ -36,7 +36,7 @@ onMounted(async () => {
 <template>
   <Topbar />
   <div class="container">
-    <div class="row g-0 g-lg-5 clearfix mt-lg-1">
+    <div class="row g-0 g-lg-5">
       <Sidebar />
       <Main />
     </div>
@@ -46,7 +46,7 @@ onMounted(async () => {
 
 <style scoped lang="scss">
 .container {
-  padding-top: 140px;
+  padding-top: 170px;
   padding-bottom: 50px;
 
   @media screen and (max-width: $breakpoint-lg) {

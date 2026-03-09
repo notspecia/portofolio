@@ -6,7 +6,7 @@
 .card {
     position: relative;
     overflow: hidden;
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(0, 0, 0, 0.35);
     color: $color-white;
     border: 1px solid rgba(255, 255, 255, 0.15);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
@@ -17,26 +17,26 @@
         transform: scale(1.01);
     }
 
-    &::before {
-        content: '';
-        position: absolute;
-        top: -10%;
-        left: -50%;
-        width: 250%;
-        height: 250%;
-        background: linear-gradient(0deg,
-                transparent,
-                transparent 30%,
-                rgba(255, 255, 255, 0.1));
-        transform: rotate(-30deg);
-        transition: all 1s ease;
-        opacity: 0;
-    }
+    // &::before {
+    //     content: '';
+    //     position: absolute;
+    //     top: -10%;
+    //     left: -50%;
+    //     width: 250%;
+    //     height: 250%;
+    //     background: linear-gradient(0deg,
+    //             transparent,
+    //             transparent 30%,
+    //             rgba(107, 107, 107, 0.1));
+    //     transform: rotate(-10deg);
+    //     transition: all 1s ease;
+    //     opacity: 0;
+    // }
 
 
-    &:hover::before {
-        opacity: 1;
-        transform: rotate(-30deg) translateY(100%);
-    }
+    // &:hover::before {
+    //     opacity: 1;
+    //     transform: rotate(-30deg) translateY(100%);
+    // }
 
 }
