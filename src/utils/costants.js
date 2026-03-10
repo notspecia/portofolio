@@ -24,6 +24,7 @@ import gitLogo from '@/assets/images/stack-tools/git.svg'
 import postmanLogo from '@/assets/images/stack-tools/postman.svg'
 import figmaLogo from '@/assets/images/stack-tools/figma.svg'
 import windowsLogo from '@/assets/images/stack-tools/windows.svg'
+import wsl from '@/assets/images/stack-tools/wsl.svg'
 import powershellLogo from '@/assets/images/stack-tools/powershell.svg'
 
 // static array name + svg image imported
@@ -55,7 +56,8 @@ export const tools = [
     { name: 'Postman', logo: postmanLogo },
     { name: 'Figma', logo: figmaLogo },
     { name: 'Windows', logo: windowsLogo },
-    { name: 'Powershell', logo: powershellLogo }
+    { name: 'WSL', logo: wsl },
+    // { name: 'Powershell', logo: powershellLogo }
 ];
 
 
@@ -68,13 +70,13 @@ export const VANTAthemes = {
     dark: {
         highlightColor: 0x0d1117,
         midtoneColor: 0x111111,
-        lowlightColor: 0x101970,
+        lowlightColor: 0x100970,
         baseColor: 0x0d1117,
     },
     light: {
         highlightColor: 0xe0e0e0,
         midtoneColor: 0xffffff,
-        lowlightColor: 0xa0b4ff,
+        lowlightColor: 0x100970,
         baseColor: 0xf5f5f5,
     }
 }

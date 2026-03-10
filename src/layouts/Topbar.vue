@@ -1,5 +1,5 @@
 <script setup>
-import { useTheme } from '@/composables/toggletheme';
+import { useTheme } from '@/composables/toggle-theme';
 import { useI18n } from 'vue-i18n';
 import CVpdf from '/cv-Speciale-Gabriele.pdf';
 
@@ -61,7 +61,7 @@ const setLanguage = (lang) => {
     transform: translateX(-50%);
     z-index: 3;
     width: 90%;
-    background-color: var(--bg-color);
+    background-color: rgba(17, 17, 17, 0.8);
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(10px);
     padding: 13px 40px;

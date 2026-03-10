@@ -9,7 +9,7 @@ import Footer from '@/layouts/Footer.vue';
 
 <template>
     <!-- Main content -->
-    <main class="col-12 col-lg-9 d-flex flex-column gap-5">
+    <main class="col-12 col-lg-9 d-flex flex-column gap-5 mt-5">
         <About />
         <div class="stack-tools">
             <Stack class="mb-4" />
@@ -17,7 +17,7 @@ import Footer from '@/layouts/Footer.vue';
         </div>
         <Projects class="projects" />
         <WorkExperience class="section-reveal" />
-        <hr class="w-50 mx-auto my-2" />
+        <hr class="w-50 mx-auto" />
         <Footer />
     </main>
 </template>

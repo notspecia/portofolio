@@ -10,10 +10,8 @@ export function useTheme() {
     };
 
     watch(isLightTheme, (isLight) => {
-        // aggiorna la classe html del document root
-        document.documentElement.classList.toggle('light-theme', isLight);
-        // salva nel localStorage
-        localStorage.setItem('theme', isLight ? 'light' : 'dark');
+        document.documentElement.classList.toggle('light-theme', isLight); // aggiorna la classe html del document root
+        localStorage.setItem('theme', isLight ? 'light' : 'dark'); // salva nel localStorage
     }, { immediate: true });
 
     return { isLightTheme, toggleTheme };

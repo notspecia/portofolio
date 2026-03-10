@@ -1,14 +1,14 @@
 <script setup>
 import { onMounted, ref, watch } from 'vue';
 import { VANTAthemes } from './utils/costants';
-import { useTheme } from './composables/toggletheme';
+import { useTheme } from './composables/toggle-theme';
 import { useGithubStore } from '@/stores/github';
 import Topbar from '@/layouts/Topbar.vue';
 import Main from '@/layouts/Main.vue';
 import Sidebar from '@/layouts/Sidebar.vue';
 
 
-/* REPOSITORIES + COMMITS PINIA STATE */
+/* THEMES STATE / REPOSITORIES + COMMITS PINIA STATE */
 const { isLightTheme } = useTheme();
 const githubStore = useGithubStore();
 
