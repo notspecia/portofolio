@@ -31,7 +31,7 @@ onMounted(async () => {
     minWidth: 180.00,
     blurFactor: 1.4,
     speed: 2,
-    ...VANTAthemes.dark // default dark theme first fill
+    ...(isLightTheme.value ? VANTAthemes.light : VANTAthemes.dark)  // legge il tema salvato nel localStorage
   });
 });
 
