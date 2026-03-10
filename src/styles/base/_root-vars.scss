@@ -1,0 +1,19 @@
+// exposed vars style scss
+@use '../abstracts/' as *;
+
+
+// variabili style PER TEMA DARK (default)
+:root {
+    --bg-color: #000000;
+    --text-color: #{$color-gray-300};
+    --border-color: rgba(255, 255, 255, 0.15);
+    --navbar-bg: rgba(17, 17, 17, 0.8);
+}
+
+// variabili style PER TEMA LIGHT
+:root.light-theme {
+    --bg-color: #f5f5f5;
+    --text-color: #111111;
+    --border-color: rgba(0, 0, 0, 0.15);
+    --navbar-bg: rgba(240, 240, 240, 0.8);
+}

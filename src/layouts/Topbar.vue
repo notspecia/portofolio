@@ -1,9 +1,13 @@
 <script setup>
-import CVpdf from '/cv-Speciale-Gabriele.pdf';
+import { useTheme } from '@/composables/toggletheme';
 import { useI18n } from 'vue-i18n';
+import CVpdf from '/cv-Speciale-Gabriele.pdf';
 
 /* I18N LANG */
 const { locale } = useI18n(); // rendiamolo reattivo per il cambio lingua
+
+/* STORE COMPOSABLE */
+const { isLightTheme, toggleTheme } = useTheme();
 
 /* FUNCTIONS */
 const setLanguage = (lang) => {
@@ -14,7 +18,12 @@ const setLanguage = (lang) => {
 
 <template>
     <nav class="topbar">
-        <div class="d-flex justify-content-end align-items-center gap-3">
+        <div class="d-flex justify-content-end align-items-center gap-4">
+            <!-- Toggle theme -->
+            <div class="toggle-theme" @click="toggleTheme">
+                <i v-if="!isLightTheme" class="bi bi-moon"></i>
+                <i v-else class="bi bi-sun"></i>
+            </div>
             <!-- CV -->
             <a :href="CVpdf" target="_blank" class="btn btn-dark btn-sm" data-bs-toggle="tooltip"
                 title="Visualizza il CV">
@@ -52,7 +61,7 @@ const setLanguage = (lang) => {
     transform: translateX(-50%);
     z-index: 3;
     width: 90%;
-    background-color: rgba(17, 17, 17, 0.8);
+    background-color: var(--bg-color);
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(10px);
     padding: 13px 40px;
@@ -61,6 +70,16 @@ const setLanguage = (lang) => {
 
     @media (max-width: $breakpoint-sm) {
         width: 97%;
+    }
+
+    .toggle-theme {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background-color: #212529;
+        border-radius: 5px;
     }
 }
 </style>

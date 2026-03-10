@@ -61,3 +61,20 @@ export const tools = [
 
 // repo excluded from the projects list
 export const excludedRepo = ['VUE', 'ANGULAR', 'REACT', 'C-', 'HTML-CSS', 'JavaScript', 'PHP', 'NodeJS', 'notspecia'];
+
+
+/* THEMES color object for bg animated VANTA */
+export const VANTAthemes = {
+    dark: {
+        highlightColor: 0x0d1117,
+        midtoneColor: 0x111111,
+        lowlightColor: 0x101970,
+        baseColor: 0x0d1117,
+    },
+    light: {
+        highlightColor: 0xe0e0e0,
+        midtoneColor: 0xffffff,
+        lowlightColor: 0xa0b4ff,
+        baseColor: 0xf5f5f5,
+    }
+}

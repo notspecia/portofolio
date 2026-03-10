@@ -1,5 +1,7 @@
 <script setup>
-import { onMounted } from 'vue';
+import { onMounted, ref, watch } from 'vue';
+import { VANTAthemes } from './utils/costants';
+import { useTheme } from './composables/toggletheme';
 import { useGithubStore } from '@/stores/github';
 import Topbar from '@/layouts/Topbar.vue';
 import Main from '@/layouts/Main.vue';
@@ -7,28 +9,40 @@ import Sidebar from '@/layouts/Sidebar.vue';
 
 
 /* REPOSITORIES + COMMITS PINIA STATE */
+const { isLightTheme } = useTheme();
 const githubStore = useGithubStore();
+
+/* REF */
+const vantaInstance = ref(null);
 
 
 // onMount, loading of repos and commits, then apply custom theme vanta bg animated on the body
 onMounted(async () => {
   // get all the data's from github
   await githubStore.initGithubData();
+
   // Vanta animation bg
-  VANTA.FOG({
+  vantaInstance.value = VANTA.FOG({
     el: "#animated-bg",
     mouseControls: true,
     touchControls: true,
     gyroControls: false,
     minHeight: 150.00,
     minWidth: 180.00,
-    highlightColor: 0x0d1117,
-    midtoneColor: 0x111111,
-    lowlightColor: 0x101970,
-    baseColor: 0x0d1117,
     blurFactor: 1.4,
-    speed: 2
+    speed: 2,
+    ...VANTAthemes.dark // default dark theme first fill
   });
+});
+
+
+/* WATCH */
+// quando cambia il tema, aggiorna i colori Vanta
+// setOptions --> è il modo che Vanta ti dà per aggiornare i colori senza ricreare l'animazione da zero:
+watch(isLightTheme, (isLight) => {
+  vantaInstance.value?.setOptions(
+    isLight ? VANTAthemes.light : VANTAthemes.dark
+  );
 });
 </script>
 
