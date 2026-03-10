@@ -27,7 +27,7 @@
         translate: -50% -50%;
         width: 100%;
         height: 100%;
-        background-image: conic-gradient(blue, rgb(216, 227, 255), transparent 50%);
+        background-image: conic-gradient(blue, var(--avatar-spin-color), transparent 50%);
         padding: 84px;
         border-radius: 50%;
         animation: spin 2s linear infinite;

@@ -31,7 +31,7 @@ import Labelsection from './Labelsection.vue';
     font-weight: $font-weight-bold;
     letter-spacing: 0.25px;
     padding-bottom: 5px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.311);
+    border-bottom: 1px solid var(--border-color);
     margin-right: 20px;
 }
 

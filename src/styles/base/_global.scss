@@ -10,8 +10,6 @@ html {
     @media screen and (max-width:$breakpoint-sm) {
         font-size: 16px;
     }
-
-
 }
 
 *,
@@ -26,8 +24,8 @@ body {
     height: 100%;
     width: 100%;
     position: relative;
-    color: $color-gray-300;
-    background-color: black; // repalce the canvas animate until will appear
+    color: var(--text-color);
+    background-color: var(--bg-color); // repalce the canvas animate until will appear
     font-family: $font-family-base;
     font-weight: $font-weight-regular;
     line-height: 1.7;

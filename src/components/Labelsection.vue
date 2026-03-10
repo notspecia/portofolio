@@ -16,12 +16,12 @@ defineProps({
 <style scoped lang="scss">
 .custom-label {
     display: inline-block;
-    color: #fff;
+    color: var(--text-color);
     font-family: $font-family-hand;
     font-size: 1.1rem;
     font-weight: $font-weight-semibold;
     padding: 0.125rem 0.75rem;
-    border: 1px solid rgba(220, 220, 220, 0.288);
+    border: 1px solid var(--border-color);
     border-radius: 9999px;
     margin-bottom: 1.5rem;
 }

@@ -20,22 +20,21 @@ const setLanguage = (lang) => {
     <nav class="topbar">
         <div class="d-flex justify-content-end align-items-center gap-4">
             <!-- Toggle theme -->
-            <div class="toggle-theme" @click="toggleTheme">
+            <button class="btn" @click="toggleTheme">
                 <i v-if="!isLightTheme" class="bi bi-moon"></i>
                 <i v-else class="bi bi-sun"></i>
-            </div>
+            </button>
             <!-- CV -->
-            <a :href="CVpdf" target="_blank" class="btn btn-dark btn-sm" data-bs-toggle="tooltip"
-                title="Visualizza il CV">
+            <a :href="CVpdf" target="_blank" class="btn btn-sm" data-bs-toggle="tooltip" title="Visualizza il CV">
                 <i class="bi bi-file-earmark"></i>
             </a>
             <!-- Language Dropdown -->
             <div class="dropdown-center">
-                <button class="btn btn-dark btn-sm dropdown-toggle" data-bs-toggle="dropdown" data-bs-placement="bottom"
+                <button class="btn btn-sm dropdown-toggle" data-bs-toggle="dropdown" data-bs-placement="bottom"
                     title="Cambia lingua">
                     <i class="bi bi-translate"></i>
                 </button>
-                <ul class="dropdown-menu dropdown-menu-dark mt-2">
+                <ul class="dropdown-menu mt-2" :class="isLightTheme ? 'dropdown-menu-light' : 'dropdown-menu-dark'">
                     <li>
                         <button class="dropdown-item" @click="setLanguage('it')">Italiano <i v-if="locale === 'it'"
                                 class="bi bi-check-lg"></i>
@@ -61,25 +60,21 @@ const setLanguage = (lang) => {
     transform: translateX(-50%);
     z-index: 3;
     width: 90%;
-    background-color: rgba(17, 17, 17, 0.8);
+    background-color: var(--navbar-bg);
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(10px);
-    padding: 13px 40px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 10px 40px;
+    border: 1px solid var(--border-color);
     border-radius: 50px;
 
     @media (max-width: $breakpoint-sm) {
         width: 97%;
     }
 
-    .toggle-theme {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40px;
-        height: 40px;
-        background-color: #212529;
-        border-radius: 5px;
+    .btn {
+        color: var(--navabr-btn-color);
+        background-color: var(--navabr-btn-bg);
     }
+
 }
 </style>

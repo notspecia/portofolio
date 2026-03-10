@@ -4,16 +4,32 @@
 
 // variabili style PER TEMA DARK (default)
 :root {
+    // globals
     --bg-color: #000000;
     --text-color: #{$color-gray-300};
     --border-color: rgba(255, 255, 255, 0.15);
+    // navbar/topbar
     --navbar-bg: rgba(17, 17, 17, 0.8);
+    --navabr-btn-bg: #1a1a1b;
+    --navabr-btn-color: #ccccd5;
+    // cards
+    --card-bg: rgba(0, 0, 0, 0.30);
+    // profile/avatar
+    --avatar-spin-color: rgb(216, 227, 255);
 }
 
 // variabili style PER TEMA LIGHT
 :root.light-theme {
-    --bg-color: #f5f5f5;
-    --text-color: #111111;
-    --border-color: rgba(0, 0, 0, 0.15);
+    // globals
+    --bg-color: #f5f5f5bf;
+    --text-color: #{$color-gray-900};
+    --border-color: rgba(0, 0, 0, 0.25);
+    // navbar/topbar
     --navbar-bg: rgba(240, 240, 240, 0.8);
+    --navabr-btn-bg: #eaeaec;
+    --navabr-btn-color: #212123;
+    // cards
+    --card-bg: rgba(255, 255, 255, 0.3);
+    // profile/avatar
+    --avatar-spin-color: rgb(65, 62, 62);
 }
