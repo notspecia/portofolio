@@ -1,7 +1,9 @@
 <script setup>
 import { computed, onMounted, ref } from "vue";
+import { useTheme } from "@/composables/toggle-theme";
 import { useGithubStore } from "@/stores/github";
 import commitLogo from "@/assets/images/stack-tools/commit.svg";
+import commitLogoinverted from "@/assets/images/stack-tools/commit-inverted.png";
 
 // props repo cycled into parent
 const props = defineProps({
@@ -11,7 +13,8 @@ const props = defineProps({
   },
 });
 
-/* REPOSITORIES + COMMITS PINIA STATE */
+/* THEMES STATE / REPOSITORIES + COMMITS PINIA STATE */
+const { isLightTheme } = useTheme();
 const githubStore = useGithubStore();
 
 /* REF */
@@ -45,7 +48,7 @@ onMounted(async () => {
         <img :src="repo.owner.avatar_url" alt="logo repo" class="repo-logo" />
         <h5 class="card-title">
           {{ repo.name }} <br />
-          <span> {{ repo.full_name }}</span>
+          <span class="card-sub-description">{{ repo.full_name }}</span>
         </h5>
       </div>
       <p class="card-text">
@@ -53,7 +56,7 @@ onMounted(async () => {
       </p>
       <div class="repo-infos">
         <div class="info">
-          <img :src="commitLogo" alt="commit logo" />
+          <img :src="isLightTheme ? commitLogoinverted : commitLogo" alt="commit logo" />
           <span class="ms-2">{{ commitCount }}</span>
         </div>
         <div class="info">
@@ -74,11 +77,6 @@ onMounted(async () => {
 
 .card-title {
   font-size: 1.1rem;
-
-  span {
-    color: $color-gray-500;
-    font-size: 0.9rem;
-  }
 }
 
 .card-text {

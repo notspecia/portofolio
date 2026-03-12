@@ -17,6 +17,12 @@
         transform: scale(1.01);
     }
 
+    .card-sub-description {
+        color: var(--card-sub-description-color);
+        font-size: 0.75rem;
+        margin: 0;
+    }
+
     // &::before {
     //     content: '';
     //     position: absolute;

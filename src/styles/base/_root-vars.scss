@@ -14,6 +14,7 @@
     --navabr-btn-color: #ccccd5;
     // cards
     --card-bg: rgba(0, 0, 0, 0.30);
+    --card-sub-description-color:#{$color-gray-500};
     // profile/avatar
     --avatar-spin-color: rgb(216, 227, 255);
 }
@@ -26,10 +27,11 @@
     --border-color: rgba(0, 0, 0, 0.25);
     // navbar/topbar
     --navbar-bg: rgba(240, 240, 240, 0.8);
-    --navabr-btn-bg: #eaeaec;
+    --navabr-btn-bg: #e7e7e7;
     --navabr-btn-color: #212123;
     // cards
-    --card-bg: rgba(255, 255, 255, 0.3);
+    --card-bg: rgba(255, 255, 255, 0.5);
+    --card-sub-description-color: #{$color-gray-600};
     // profile/avatar
     --avatar-spin-color: rgb(65, 62, 62);
 }

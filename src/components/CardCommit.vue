@@ -1,8 +1,9 @@
 <script setup>
 import { computed } from 'vue';
+import { useTheme } from '@/composables/toggle-theme';
 import { useGithubStore } from '../stores/github';
 import commitLogo from '@/assets/images/stack-tools/commit.svg'
-
+import commitLogoinverted from "@/assets/images/stack-tools/commit-inverted.png";
 
 // props commits cycled into parent
 const props = defineProps({
@@ -12,8 +13,10 @@ const props = defineProps({
 });
 
 
-/* REPOSITORIES + COMMITS PINIA STATE */
+/* THEMES STATE / REPOSITORIES + COMMITS PINIA STATE */
+const { isLightTheme } = useTheme();
 const githubStore = useGithubStore();
+
 
 
 /* COMPUTED */
@@ -42,12 +45,12 @@ const extractRepoFromCommitUrl = () => {
     <div class="card mb-4" @click="goToCommit">
         <div class="card-body">
             <div class="d-flex align-items-center gap-2 mb-2">
-                <img :src="commitLogo" alt="commit logo" class="commit-logo">
+                <img :src="isLightTheme ? commitLogoinverted : commitLogo" alt="commit logo" class="commit-logo">
                 <h5 class="card-title mb-0">
                     {{ extractRepoFromCommitUrl() }}
                 </h5>
             </div>
-            <p class="card-text">
+            <p class="card-sub-description">
                 {{ commitDescription }}
             </p>
         </div>
@@ -66,9 +69,5 @@ const extractRepoFromCommitUrl = () => {
         font-size: 0.9rem;
     }
 
-    .card-text {
-        color: $color-gray-400;
-        font-size: 0.7rem;
-    }
 }
 </style>
