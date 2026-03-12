@@ -11,10 +11,10 @@
     border: 1px solid var(--border-color);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     cursor: pointer;
-    transition: all 0.4s linear;
+    transition: all 0.2s linear;
 
     &:hover {
-        transform: scale(1.01);
+        transform: scale(1.02);
     }
 
     .card-sub-description {

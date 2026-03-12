@@ -6,17 +6,17 @@ import Labelsection from './Labelsection.vue';
 // check if show the label (only on lg > and up)
 const showLabel = ref(window.innerWidth <= 992);
 
-// const onResize = () => {
-//     showLabel.value = window.innerWidth <= 992;
-// };
+const onResize = () => {
+    showLabel.value = window.innerWidth <= 992;
+};
 
-// // add and remove event listener on resize of the window
-// onMounted(() => {
-//     window.addEventListener('resize', onResize);
-// });
-// onUnmounted(() => {
-//     window.removeEventListener('resize', onResize);
-// });
+// add and remove event listener on resize of the window
+onMounted(() => {
+    window.addEventListener('resize', onResize);
+});
+onUnmounted(() => {
+    window.removeEventListener('resize', onResize);
+});
 </script>
 
 

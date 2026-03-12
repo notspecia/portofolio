@@ -5,15 +5,17 @@
 // variabili style PER TEMA DARK (default)
 :root {
     // globals
-    --bg-color: #000000;
+    --bg-color: #{$color-black};
     --text-color: #{$color-gray-300};
     --border-color: rgba(255, 255, 255, 0.15);
+    --highlights-bg: rgba(128, 128, 128, 0.2);
+    --highlights-color: #{$color-white};
     // navbar/topbar
     --navbar-bg: rgba(17, 17, 17, 0.8);
     --navabr-btn-bg: #1a1a1b;
     --navabr-btn-color: #ccccd5;
     // cards
-    --card-bg: rgba(0, 0, 0, 0.30);
+    --card-bg: rgba(0, 0, 0, 0.4);
     --card-sub-description-color:#{$color-gray-500};
     // profile/avatar
     --avatar-spin-color: rgb(216, 227, 255);
@@ -24,13 +26,15 @@
     // globals
     --bg-color: #f5f5f5bf;
     --text-color: #{$color-gray-900};
-    --border-color: rgba(0, 0, 0, 0.25);
+    --border-color: rgba(0, 0, 0, 0.15);
+    --highlights-bg: rgba(181, 181, 181, 0.35);
+    --highlights-color: #{$color-black};
     // navbar/topbar
     --navbar-bg: rgba(240, 240, 240, 0.8);
     --navabr-btn-bg: #e7e7e7;
     --navabr-btn-color: #212123;
     // cards
-    --card-bg: rgba(255, 255, 255, 0.5);
+    --card-bg: rgba(255, 255, 255, 0.2);
     --card-sub-description-color: #{$color-gray-600};
     // profile/avatar
     --avatar-spin-color: rgb(65, 62, 62);

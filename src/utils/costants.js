@@ -76,7 +76,7 @@ export const VANTAthemes = {
     light: {
         highlightColor: 0xe0e0e0,
         midtoneColor: 0xffffff,
-        lowlightColor: 0x100970,
+        lowlightColor: 0x99b3ff,
         baseColor: 0xf5f5f5,
     }
 }

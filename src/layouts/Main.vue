@@ -15,9 +15,9 @@ import Footer from '@/layouts/Footer.vue';
             <Stack class="mb-4" />
             <Tools />
         </div>
-        <Projects class="projects" />
         <WorkExperience class="section-reveal" />
-        <hr class="w-50 mx-auto" />
+        <Projects class="projects" />
+        <hr class="w-75 mx-auto" />
         <Footer />
     </main>
 </template>
@@ -51,7 +51,7 @@ import Footer from '@/layouts/Footer.vue';
 
     // mobile small screen 
     @media (max-width: $breakpoint-sm) {
-        animation-timeline: view(310% 25%);
+        animation-timeline: view(260% 25%);
     }
 }
 </style>

@@ -1,4 +1,12 @@
 <script setup>
+import { useTheme } from "@/composables/toggle-theme";
+import github from "@/assets/images/footer-tools/github.webp";
+import githubInverted from "@/assets/images/footer-tools/github-inverted.svg";
+import vercel from "@/assets/images/footer-tools/vercel.png";
+import vercelInverted from "@/assets/images/footer-tools/vercel-inverted.svg";
+
+/* STORE COMPOSABLE */
+const { isLightTheme } = useTheme();
 
 </script>
 
@@ -18,13 +26,14 @@
             </p>
             <span>.</span>
             <p>Data from
-                <img src="@/assets/images/footer-tools/github.webp" alt="Github logo" class="icon" />
-                <a href="https://docs.github.com/en/rest" target="_blank" style="color: #e4ebf1;">github API</a>
+                <img :src="isLightTheme ? githubInverted : github" alt="Github logo" class="icon" />
+                <a href="https://docs.github.com/en/rest" target="_blank" style="color:var(--text-color);">github
+                    API</a>
             </p>
             <span>.</span>
             <p>Deploy at
-                <img src="@/assets/images/footer-tools/vercel.png" alt="Vercel logo" class="icon" />
-                <a href="https://vercel.com/" target="_blank" style="color: #e4ebf1;">Vercel</a>
+                <img :src="isLightTheme ? vercelInverted : vercel" alt="Vercel logo" class="icon" />
+                <a href="https://vercel.com/" target="_blank" style="color:var(--text-color);">Vercel</a>
             </p>
         </div>
     </footer>
