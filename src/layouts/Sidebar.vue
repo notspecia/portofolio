@@ -7,7 +7,7 @@ import LatestCommits from '@/components/LatestCommits.vue';
 
 <template>
     <!-- Sidebar -->
-    <aside class="col-12 col-lg-3 mt-5">
+    <aside class="col-12 col-lg-3 mt-4 mt-lg-5">
         <ProfilePicture />
         <!-- contacts and info about me -->
         <Labelsection label="Info" />
